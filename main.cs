@@ -2,7 +2,7 @@ using System;
 
 class Program
 {
-    static int GetValidFanSpeed()
+    static int ValidFanSpeedInput()
     {
         while (true)
         {
@@ -18,7 +18,7 @@ class Program
         }
     }
 
-    static char GetValidOscillateOption()
+    static char OscillateOption()
     {
         while (true)
         {
@@ -65,8 +65,8 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("InterProg Midterms: Electric Fan");
-        int fanSpeed = GetValidFanSpeed();
-        char oscillateOption = GetValidOscillateOption();
+        int fanSpeed = ValidFanSpeedInput();
+        char oscillateOption = OscillateOption();
         DisplayFanPower(fanSpeed, oscillateOption);
     }
 }
